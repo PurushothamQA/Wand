@@ -1,3 +1,5 @@
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\Drivers\chromedriver.exe
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\Drivers\geckodriver.exe
 Z:\Wand\WandAutomation\WandAutomation\bin\Release\ExcelFile\TimeSheetData.xlsx
 Z:\Wand\WandAutomation\WandAutomation\bin\Release\WandAutomation.exe.config
 Z:\Wand\WandAutomation\WandAutomation\bin\Release\WandAutomation.exe
