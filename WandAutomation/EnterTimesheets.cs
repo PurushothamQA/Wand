@@ -101,15 +101,12 @@ namespace WandAutomation
         public static bool ClickOnFinalSubmit()
         {
             Driver.FindElement(By.CssSelector("input[value = 'Submit'")).Click();
-            Thread.Sleep(7000);
+            WebDriverWait waitForFinalMessage = new WebDriverWait(Driver, TimeSpan.FromSeconds(20));
+            waitForFinalMessage.Until(
+                ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.ClassName("body11bold")));
             var totalHoursSubmitted = Driver.FindElement(By.ClassName("body11bold")).Text;
             var expectedTotalHours = ReadFromExcel.ReturnValueFromExcel("TotalHours");
             return totalHoursSubmitted == expectedTotalHours;
-        }
-
-        public static void WaitForPageToLoad()
-        {
-            
         }
     }
 }
