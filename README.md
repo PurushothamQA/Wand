@@ -1,5 +1,5 @@
 # Wand
-Wand is an timesheet entry tool which is a tedious task to fill bcoz of its UI functionality.
+Wand is a timesheet entry tool which is a tedious task to fill bcoz of its UI functionality.
 So coming up with automating the whole process of filling timesheets on weekly basis.
 This framework is a data driven where user needs to enter the required parameters like credentials, timesheet date range, hours, leaves/holidays, etc... in 'TimeSheetData.xlsx' sheet.
 
