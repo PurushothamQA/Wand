@@ -1,0 +1,12 @@
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\ExcelFile\TimeSheetData.xlsx
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WandAutomation.exe.config
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WandAutomation.exe
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WandAutomation.pdb
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\SpreadsheetGear.dll
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WebDriver.dll
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WebDriver.Support.dll
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\SpreadsheetGear.xml
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WebDriver.xml
+Z:\Wand\WandAutomation\WandAutomation\bin\Release\WebDriver.Support.xml
+Z:\Wand\WandAutomation\WandAutomation\obj\Release\WandAutomation.exe
+Z:\Wand\WandAutomation\WandAutomation\obj\Release\WandAutomation.pdb

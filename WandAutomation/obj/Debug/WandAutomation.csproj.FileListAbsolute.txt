@@ -1,0 +1,8 @@
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\chromedriver.exe
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\WandAutomation.exe.config
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\WandAutomation.exe
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\WandAutomation.pdb
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\WebDriver.dll
+Z:\Wand\WandAutomation\WandAutomation\bin\Debug\WebDriver.xml
+Z:\Wand\WandAutomation\WandAutomation\obj\Debug\WandAutomation.exe
+Z:\Wand\WandAutomation\WandAutomation\obj\Debug\WandAutomation.pdb
