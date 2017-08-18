@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
@@ -93,20 +94,33 @@ namespace WandAutomation
             for (var i = 1; i < 6; i++)
             {
                 var temp = i - 1;
-                if (!Leaves.Contains(i))
-                    Driver.FindElement(By.Name("billingDetailItems[" + temp + "].noBreakTaken")).Click();
+                if (Leaves.Contains(i)) continue;
+                var ischeckedElement = Driver.FindElement(By.Name("billingDetailItems[" + temp + "].noBreakTaken"));
+                if (!ischeckedElement.Selected)
+                {
+                    ischeckedElement.Click();
+                }
             }
         }
 
-        public static bool ClickOnFinalSubmit()
+        public static void ClickOnFinalSubmit()
         {
             Driver.FindElement(By.CssSelector("input[value = 'Submit'")).Click();
+            
+        }
+
+        public static void ValidateEnteredHours()
+        {
             WebDriverWait waitForFinalMessage = new WebDriverWait(Driver, TimeSpan.FromSeconds(20));
             waitForFinalMessage.Until(
                 ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.ClassName("body11bold")));
             var totalHoursSubmitted = Driver.FindElement(By.ClassName("body11bold")).Text;
+            var resultString = Regex.Match(totalHoursSubmitted, @"\d+").Value;
             var expectedTotalHours = ReadFromExcel.ReturnValueFromExcel("TotalHours");
-            return totalHoursSubmitted == expectedTotalHours;
+            if (!resultString.Contains(expectedTotalHours))
+            {
+                throw new Exception("Your expected hours "+expectedTotalHours+" for this week is not matching submitted total hours"+totalHoursSubmitted+". Kindly re-check and submit again");
+            }
         }
     }
 }

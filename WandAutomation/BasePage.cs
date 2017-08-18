@@ -31,6 +31,7 @@ namespace WandAutomation
             EnterTimesheets.SelectChargeCode();
             EnterTimesheets.NoLunchBreak();
             EnterTimesheets.ClickOnFinalSubmit();
+            EnterTimesheets.ValidateEnteredHours();
 
         }
     }
